@@ -1,3 +1,13 @@
+# services:
+#   frontend:
+#     image: khakee1234/234-deploylab-frontend:latest
+#     pull_policy: always
+#     ports:
+#       - "8081:80"
+#     environment:
+#       - VITE_GRAPHQL_URI=http://34.229.14.177:8082/graphql
+#       - VITE_SERVER_URI=http://34.229.14.177:8082
+#     restart: unless-stopped
 services:
   frontend:
     image: khakee1234/234-deploylab-frontend:latest
@@ -5,6 +15,6 @@ services:
     ports:
       - "8081:80"
     environment:
-      - VITE_GRAPHQL_URI=http://34.229.14.177:8082/graphql
-      - VITE_SERVER_URI=http://34.229.14.177:8082
+      - VITE_GRAPHQL_URI=http://1.2.3.4:8082/graphql
+      - VITE_SERVER_URI=http://1.2.3.4:8082
     restart: unless-stopped
