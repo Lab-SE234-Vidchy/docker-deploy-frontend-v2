@@ -2,8 +2,8 @@
 set -e
 
 # Default values
-VITE_GRAPHQL_URI="${VITE_GRAPHQL_URI:-http://54.162.203.238:8082/graphql}"
-VITE_SERVER_URI="${VITE_SERVER_URI:-http://54.162.203.238:8082}"
+VITE_GRAPHQL_URI="${VITE_GRAPHQL_URI:-http://54.146.243.208:8082/graphql}"
+VITE_SERVER_URI="${VITE_SERVER_URI:-http://54.146.243.208:8082}"
 
 # Replace placeholders in JS files
 find /usr/share/nginx/html/assets -name '*.js' -exec sed -i \
